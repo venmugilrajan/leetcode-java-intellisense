@@ -6,7 +6,7 @@ export class UpdateChecker {
    * Default repository: update this with your actual GitHub username/repo
    */
   static GITHUB_REPO = 'leetcode-java-intellisense';
-  static GITHUB_OWNER = 'ruthr'; // Can be adjusted or configured
+  static GITHUB_OWNER = 'venmugilrajan';
   static STORAGE_KEY = 'leetsense_last_update_check';
   static CHECK_INTERVAL_MS = 6 * 60 * 60 * 1000; // Check once every 6 hours
 
