@@ -76,6 +76,15 @@ leetcode-java-intellisense/
 5. Click **Load unpacked**.
 6. Select the **`dist`** directory inside this repository (`r:\extension\dist`).
 
+### 🔄 Updating the Extension (For Users & Teammates)
+When a new version is released on GitHub:
+1. A notification banner automatically appears on LeetCode letting the user know a new version (e.g. `v1.0.1`) is available with a link to the release notes.
+2. If the user cloned the repository with Git, they can update anytime with:
+   ```bash
+   git pull && npm run build
+   ```
+3. Click the 🔄 **Reload** icon on the extension card at `chrome://extensions`. No re-installation needed!
+
 ---
 
 ## 🧪 Testing and Verification

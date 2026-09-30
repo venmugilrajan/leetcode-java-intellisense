@@ -137,3 +137,77 @@
   height: 18px;
   pointer-events: none;
 }
+
+/* LeetSense Update Notification Banner */
+#leetsense-update-banner {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999999;
+  background-color: #1e1e1e;
+  border: 1px solid #007acc;
+  border-radius: 6px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  color: #ffffff;
+  padding: 10px 14px;
+  animation: leetsenseSlideUp 0.3s ease-out;
+}
+
+.leetsense-update-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.leetsense-update-icon {
+  font-size: 16px;
+}
+
+.leetsense-update-text {
+  font-size: 13px;
+  color: #e2e8f0;
+}
+
+.leetsense-update-btn {
+  background-color: #007acc;
+  color: #ffffff !important;
+  font-size: 12px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+}
+
+.leetsense-update-btn:hover {
+  background-color: #0098ff;
+  text-decoration: none;
+}
+
+.leetsense-update-close {
+  background: transparent;
+  border: none;
+  color: #94a3b8;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 4px;
+  margin-left: 4px;
+}
+
+.leetsense-update-close:hover {
+  color: #ffffff;
+}
+
+@keyframes leetsenseSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+

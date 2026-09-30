@@ -5,6 +5,7 @@ import { CompletionWidget } from '../ui/completionWidget.js';
 import { Logger } from '../utils/logger.js';
 import { debounce } from '../utils/debounce.js';
 import { JavaParser } from '../autocomplete/parser.js';
+import { UpdateChecker } from '../utils/updateChecker.js';
 
 class LeetSenseContent {
   constructor() {
@@ -20,6 +21,9 @@ class LeetSenseContent {
 
   init() {
     Logger.info('Initializing LeetCode Java IntelliSense Extension...');
+
+    // Run non-blocking check for GitHub updates
+    UpdateChecker.checkForUpdates();
 
     this.widget = new CompletionWidget({
       onSelect: (item) => this.handleCompletionSelect(item)
