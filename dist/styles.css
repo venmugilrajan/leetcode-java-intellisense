@@ -1,0 +1,139 @@
+/* LeetCode Java IntelliSense Professional VS Code-Style Dark UI */
+
+#leetsense-completion-widget {
+  position: absolute;
+  z-index: 100000;
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, monospace;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #cccccc;
+  background-color: #252526;
+  border: 1px solid #454545;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.45);
+  overflow: hidden;
+  max-width: 650px;
+  user-select: none;
+}
+
+#leetsense-completion-widget.hidden {
+  display: none !important;
+}
+
+.leetsense-list-container {
+  width: 280px;
+  max-height: 260px;
+  overflow-y: auto;
+  border-right: 1px solid #333333;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom modern scrollbar */
+.leetsense-list-container::-webkit-scrollbar {
+  width: 6px;
+}
+.leetsense-list-container::-webkit-scrollbar-thumb {
+  background-color: #424242;
+  border-radius: 3px;
+}
+
+.leetsense-item {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leetsense-item:hover {
+  background-color: #2a2d2e;
+}
+
+.leetsense-item.selected {
+  background-color: #04395e !important;
+  color: #ffffff !important;
+}
+
+.leetsense-icon {
+  margin-right: 8px;
+  font-size: 12px;
+  width: 14px;
+  text-align: center;
+}
+
+.leetsense-icon.method {
+  color: #b180d7;
+}
+
+.leetsense-icon.field {
+  color: #75beff;
+}
+
+.leetsense-icon.class {
+  color: #4ec9b0;
+}
+
+.leetsense-icon.variable {
+  color: #9cdcfe;
+}
+
+.leetsense-icon.snippet {
+  color: #ce9178;
+}
+
+.leetsense-icon.keyword {
+  color: #569cd6;
+}
+
+.leetsense-label {
+  flex: 1;
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.leetsense-detail-label {
+  margin-left: 8px;
+  color: #888888;
+  font-size: 11px;
+}
+
+.leetsense-doc-panel {
+  width: 320px;
+  padding: 10px 14px;
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  box-sizing: border-box;
+}
+
+.leetsense-doc-signature {
+  font-family: Consolas, "Courier New", monospace;
+  font-size: 12px;
+  color: #4ec9b0;
+  margin-bottom: 8px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #333333;
+  word-break: break-word;
+}
+
+.leetsense-doc-content {
+  font-size: 12px;
+  color: #b0b0b0;
+  line-height: 1.5;
+  overflow-y: auto;
+  max-height: 200px;
+}
+
+/* Fallback caret positioning helper */
+.leetsense-cursor-marker {
+  position: absolute;
+  width: 1px;
+  height: 18px;
+  pointer-events: none;
+}
