@@ -10,7 +10,7 @@ A lightweight, high-performance Manifest V3 Chrome Extension providing **VS Code
 - **Static Class Completion**: Full static method completion and signature help for `Arrays`, `Math`, `Collections`, `System`, `Objects`, `Integer`, etc.
 - **LeetCode Structure Support**: First-class support for `ListNode`, `TreeNode`, and `Node` (`val`, `next`, `left`, `right`, etc.).
 - **Code Snippets**: Quick templates for `sout` / `syso` (`System.out.println()`), `fori`, `forr`, `foreach`, `psvm`, `if`, `try`.
-- **VS Code-Style Dark UI**: Pixel-perfect dark popup featuring:
+- **VS Code-Style Dark UI**: Pixel-perfect dark popup featuring: 
   - 🔷 Method icons and 🔹 field indicators
   - Keyboard navigation (`ArrowUp`, `ArrowDown`, `Enter`, `Tab`, `Escape`)
   - Real-time side documentation and signature panel
